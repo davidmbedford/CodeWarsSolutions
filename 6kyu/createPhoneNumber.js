@@ -22,3 +22,17 @@ function createPhoneNumber(numbers){
     let phoneNumber = "(" + arr.slice(0, 3) + ") " + arr.slice(3, 6) + "-" + arr.slice(6, 10);
     return phoneNumber;
   }
+
+  
+//   interesting find from other community solutions
+
+function createPhoneNumber(numbers){
+    var format = "(xxx) xxx-xxxx";
+    
+    for(var i = 0; i < numbers.length; i++)
+    {
+      format = format.replace('x', numbers[i]);
+    }
+    
+    return format;
+  }
