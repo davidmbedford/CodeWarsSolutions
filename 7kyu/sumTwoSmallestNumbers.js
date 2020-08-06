@@ -5,11 +5,7 @@
 
 // [10, 343445353, 3453445, 3453545353453] should return 3453455.
 
-function sumTwoSmallestNumbers(numbers) {  
-    let arr = numbers;
-    while (i < arr.length) {
-        arr[]
-
-
-    }
-  }
+const sumTwoSmallestNumbers = (numbers) => {
+  let arr = numbers.sort(function(a, b) {return a-b});
+  return arr[0] + arr[1];
+}
