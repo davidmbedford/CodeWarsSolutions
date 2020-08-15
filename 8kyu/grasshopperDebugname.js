@@ -4,3 +4,7 @@
 // Example output:
 
 // Hello, Mr. Spock
+
+const sayHello = name => {
+  return `Hello, ${name}`
+}
